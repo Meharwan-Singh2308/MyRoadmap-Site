@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::selection{
+    background-color: #c8a199;
+    color: #1C1C1C;
+}
+
+html,body{
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+main{
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #1C1C1C;
+    color: rgb(195, 131, 78);
+    padding: 0 2vw;
+  
+}
+
+
+
+
+.myHeading{
+    font-size: 6vw;
+    font-weight: bolder;
+    text-align:center;
+}
+
+.syllabusCard{
+
+    width: 90vw;
+    height: 80%;    
+    font-weight: bolder;
+    /* background-color:  #50C878; */
+    color: #ca7734;
+    padding: 2vw;
+    margin: auto;
+    border-radius: 2vw;
+}
+
+.classHeading{
+    cursor: pointer;
+    width: fit-content;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.hoverLineAnimation{
+    content: "";
+    width: 0%;
+    height: 0px;
+    background-color: #ca7734;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transition: all 0.3s ease;
+
+}
+
+.classHeading:hover .hoverLineAnimation {
+    width: 100%;
+    height:1px;
+    transition: all 0.3s ease; 
+}
+
+.classChapterHeading{
+    font-size: 2.5vw;
+    cursor: pointer;
+}
+
+
+
+.completionPercentage{
+    color: rgb(223, 78, 78);
+}
+
+
+.classChapters{
+    display: none;
+}
+
+.classChapterHeading{
+    margin-left: 5px;
+    font-weight: bold;
+    word-spacing: 2px;
+    cursor: pointer;    
+
+}
+
+h4{
+    margin: 1vw 0;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.classChapterTopics{
+    display: none;
+    margin-left: 10px;
+    color: rgb(160, 94, 23);
+}
+
+.show{
+    display: block;
+}
+
+
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+#text {
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+.strike-through {
+    text-decoration: line-through;
+}
+
+.dashed {
+    text-decoration: dashed;
+}
+
+/* Style the checkbox directly */
+input[type="checkbox"] {
+    /* Remove the default appearance */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    /* Set the size of the checkbox */
+    width: 15px;
+    height: 15px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Define the background and border */
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+}
+/* Style for checked state */
+input[type="checkbox"]:checked {
+    background-color: #42a5f5;
+    border-color: #42a5f5;
+}
+
+/* Style for hover effect */
+input[type="checkbox"]:hover {
+    border-color: #888;
+}
+
+/* The checkmark/tick mark when checked */
+input[type="checkbox"]:checked::after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 8px;
+    width: 3px;
+    height: 6px;
+    border: solid #fff;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+h5{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.rotate180{
+    display: inline-block;
+    transition: all 0.5s linear;
+    transform: rotate(180deg);
+
+}
