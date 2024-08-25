@@ -52,6 +52,7 @@ main{
     width: fit-content;
     transition: all 0.3s ease;
     position: relative;
+    margin-bottom: 1vw;
 }
 
 .hoverLineAnimation{
@@ -93,7 +94,6 @@ main{
     font-weight: bold;
     word-spacing: 2px;
     cursor: pointer;    
-
 }
 
 h4{
@@ -192,5 +192,35 @@ h5{
     display: inline-block;
     transition: all 0.5s linear;
     transform: rotate(180deg);
+
+}
+
+/* classChapterTopics */
+
+@media (max-width:550px) {
+
+  
+    .classHeading:hover .hoverLineAnimation {
+        width: 0%;
+        height:0px;
+        /* transition: ;  */
+    }
+
+    .classChapterHeading{
+        font-size: 4vw;
+    }
+    .classChapterTopics{
+        font-size: 3vw;
+    }
+    h4{
+        display: flex;
+        grid-template-columns: auto auto;
+
+        align-content: end;
+    }
+/* 
+    h4 span{
+        text-align: right;
+    } */
 
 }
